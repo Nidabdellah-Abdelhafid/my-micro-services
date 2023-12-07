@@ -28,12 +28,12 @@ Ce projet est une application reposant sur une architecture de microservices pou
 
 ### Microservice Client
 
-- Création, mise à jour et suppression de clients.
+- Création, suppression de clients.
 - Récupération des informations d'un client spécifique.
 
 ### Microservice Voiture
 
-- Création, mise à jour et suppression de voitures.
+- Création, suppression de voitures.
 - Récupération des voitures d'un client spécifique.
 
 ## Instructions d'exécution du Projet
