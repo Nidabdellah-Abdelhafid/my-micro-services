@@ -16,8 +16,8 @@ import javax.persistence.Id;
 public class Client {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
     private String nom;
-    private Integer age;
+    private Float age;
 
 }

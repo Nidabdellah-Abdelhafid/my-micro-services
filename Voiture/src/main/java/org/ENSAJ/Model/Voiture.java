@@ -6,17 +6,21 @@ import org.ENSAJ.Client;
 
 import javax.persistence.*;
 
-
+@Table(name="voitures")
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor
-@Table(name = "voiture")
 public class Voiture {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
     private String matricule;
     private String marque;
     private String model;
-    private Integer client_id;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_client")
+    private Client client;
+
+
+
 
 }

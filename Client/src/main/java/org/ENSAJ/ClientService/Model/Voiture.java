@@ -9,7 +9,6 @@ import org.ENSAJ.ClientService.Model.Client;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Voiture {
 
     private Long Id;

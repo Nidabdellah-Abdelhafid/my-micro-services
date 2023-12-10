@@ -1,21 +1,22 @@
 package org.ENSAJ.ClientService.Model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.*;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "client")
 public class Client {
 
-    @Id
+    @jakarta.persistence.Id
     @GeneratedValue
-    private Integer Id;
+    private Long Id;
     private String Nom;
-    private Integer Age;
+    private Float Age;
 }
